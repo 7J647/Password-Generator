@@ -20,10 +20,8 @@ generateBtn.addEventListener("click", writePassword);
 
 // Therefore the first prompt should be "How many characters do you want in your password (NOTE--min. 8, max 128)"
 
-
-
 var howMany = prompt ("How many characters do you want in your new password?");
-
+console.log(howMany);
 
 // Next is a series of prompts asking which character types they want to include.
 
@@ -39,7 +37,8 @@ var confirmNumeral = confirm ("Do you want to include any numerals?");
 //Last prompt is for special characters.  "Do you want to include any special characters like "&", "%", etc."
 var confirmSpecChar = confirm ("Do you want to include any special characters like the ampersand, percent sign, or similar symbols?");
 
-//The input is now validated to make sure that it meets the number of characters and has one of each character type chosen.
+//The input is now validated to make sure that it meets the number of characters, has at least one type of character chosen, and has one of each character type chosen.
+
 
 //the password is generated 
 
