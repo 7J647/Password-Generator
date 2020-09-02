@@ -13,10 +13,6 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-var HowMany=prompt("How many characters do you want in your new password?");
-
-// Pseudocode
-
 // After the button is clicked, user is prompted for password criteria.
 
 // Clicking the button starts the process so no need to ask "do you want to 
@@ -24,17 +20,24 @@ var HowMany=prompt("How many characters do you want in your new password?");
 
 // Therefore the first prompt should be "How many characters do you want in your password (NOTE--min. 8, max 128)"
 
-// This is assigned a value.
+
+
+var howMany = prompt ("How many characters do you want in your new password?");
+
 
 // Next is a series of prompts asking which character types they want to include.
 
 //First prompt is Uppercase.  "Do you want to include any UPPERCASE letters?"
+var confirmUpper = confirm ("Do you want to include any UPPERCASE letters?");
 
 //Next prompt is lowercase.  "Do you want to include any LOWERCASE letters?"
+var confirmLower = confirm ("Do you want to include any lowercase letters?");
 
 //Next prompt is numeric.  "Do you want to include any numerals?"
+var confirmNumeral = confirm ("Do you want to include any numerals?");
 
-//Last prompt is for special characters.  "Do you want to include any special characters like "&", "%", "@", etc."
+//Last prompt is for special characters.  "Do you want to include any special characters like "&", "%", etc."
+var confirmSpecChar = confirm ("Do you want to include any special characters like the ampersand, percent sign, or similar symbols?");
 
 //The input is now validated to make sure that it meets the number of characters and has one of each character type chosen.
 
