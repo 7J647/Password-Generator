@@ -86,8 +86,9 @@ for (var i = 0; i < howMany; i++) {
 
 // console.log(password)
 
-// The password is generated and alerted to the user
-alert("Your password is " + password)
+// The password is generated and alerted to the user, "password.join" takes out the commas between the
+// characters because that function removes separation between elements in an array.
 
-// alert("Your password is " password);
+alert("Your password is " + password.join(''));
+
 
