@@ -86,7 +86,7 @@ for (var i = 0; i < howMany; i++) {
 
 console.log(password)
 // The password is generated and alerted to the user
-alert(password)
+alert("Your password is " + password)
 
 // alert("Your password is " password);
 
