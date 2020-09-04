@@ -71,8 +71,11 @@ if (confirmLower!==true && confirmUpper!==true && confirmNumeral!==true && confi
   alert("You did not choose any characters, please refresh the page and start over");
 }
 
-// function passwordGenerated = for (chosenCharacters i = 0; i < chosenCharacters.length; i++) {
-//     return Math.floor(Math.random();
+// used Math.floor(Math.random)) to generate a random character from the chosenCharacters array to being the password
+
+var password = chosenCharacters[Math.floor(Math.random() * chosenCharacters.length)];
+console.log(password)
+
 
 
 
