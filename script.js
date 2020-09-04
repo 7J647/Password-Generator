@@ -10,10 +10,12 @@
 
 // }
 
-var lowerLetters = ["a", "b", "c", "d", "e", "f", "g"]
-var numerals = [1,2,3,4,5,6]
-var upperLetters = ["A", "B", "C"]
-var specialCharacters = ["!","@", "#"]
+var lowerLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+var numerals = [0,1,2,3,4,5,6,7,8,9]
+var upperLetters = ["A", "B", "C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+var specialCharacters = ["!","@", "#", "$","%","^","&","*"]
+
+console.log(lowerLetters,numerals,upperLetters,specialCharacters);
 
 var chosenCharacters = []
 // push confirmed character choices in here
@@ -88,3 +90,4 @@ if (confirmLower!==true && confirmUpper!==true && confirmNumeral!==true && confi
 //the password is generated 
 
 //the password is displayed in an alert.
+
