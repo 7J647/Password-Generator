@@ -5,7 +5,7 @@ var numerals = [0,1,2,3,4,5,6,7,8,9]
 var upperLetters = ["A", "B", "C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 var specialCharacters = ["!","@", "#", "$","%","^","&","*"]
 
-console.log(lowerLetters,numerals,upperLetters,specialCharacters);
+// console.log(lowerLetters,numerals,upperLetters,specialCharacters);
 
 var chosenCharacters = []
 // push confirmed character choices in here
@@ -31,7 +31,7 @@ var howMany = prompt ("How many characters do you want in your new password?  No
 
 //First prompt is Uppercase.  "Do you want to include any UPPERCASE letters?"
 var confirmUpper = confirm ("Do you want to include any UPPERCASE letters?");
-console.log(confirmUpper);
+// console.log(confirmUpper);
 
 //Here we are pushing the Uppercase letters into the pool of chosen characters from which to randomly generate the password"
 //we are using .concat because using push would push an array inside the new array, rather than just having one array
@@ -62,7 +62,7 @@ var confirmSpec = confirm ("Do you want to include any special characters like t
 if (confirmSpec) {
   chosenCharacters = chosenCharacters.concat(specialCharacters)
 }
-console.log(chosenCharacters);
+// console.log(chosenCharacters);
 
 //The input is now validated to make sure that it meets the number of characters, has at least one type of character chosen, and has one of each character type chosen.
 
@@ -71,16 +71,21 @@ if (confirmLower!==true && confirmUpper!==true && confirmNumeral!==true && confi
   alert("You did not choose any characters, please refresh the page and start over");
 }
 
-// used Math.floor(Math.random)) to generate a random character from the chosenCharacters array to being the password
+//created an empty array to push the password characters into
+var password = []
 
-var password = chosenCharacters[Math.floor(Math.random() * chosenCharacters.length)];
+
+// combined Math.floor(Math.random) and a forLoop to generate a random password character from .chosenCharacters,
+// push it to the password array, and have the forLoop run the same amount of times as the number of characters
+// user chose (howMany), pushing those into the password array.
+
+for (var i = 0; i < howMany; i++) {
+  passwordChar = chosenCharacters[Math.floor(Math.random() * chosenCharacters.length)];
+  password.push(passwordChar)
+}
+
 console.log(password)
+// The password is generated and alerted to the user
 
-
-
-
-// Alert passwordGenerated to the user
-//the password is generated 
-
-//the password is displayed in an alert.
+// alert("Your password is " password);
 
