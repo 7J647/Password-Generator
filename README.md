@@ -12,7 +12,7 @@ This project demonstrated the effectiveness of good pseudocoding because once th
 
 ### URL
 
-The URL for this website is 
+The URL for this website is https://7j647.github.io/Password-Generator/
 
 ### Credits
 
